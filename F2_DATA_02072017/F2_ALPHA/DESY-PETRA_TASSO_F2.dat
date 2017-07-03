@@ -1,0 +1,44 @@
+ !* Input XFitter-Photon Template
+ !*  Created on 02042017
+ !*Measurment of the photon structure function at DESY TASSO CELLO
+
+
+&Data 
+  Name = "OPAL_F_ALPHA" 
+  Reaction = "NC e+-p"
+  NData =    5
+  NColumn =   7
+  ColumnType = 4*"Bin", 2*"Error"
+  ColumnName = "Q2","xmin","xmax", "F2", "stat","sys", 
+!* NInfo =  4
+!* CInfo = "sqrt(S)", "e charge", "reduced", "e polarity"
+!* DataInfo =     0.3181E+03,   -0.1000E+01,    0.0000E+00,    0.0000E+00,
+!* IndexDataset =   101
+  Percent = 2*true
+&End 
+
+&PlotDesc
+   PlotN = 10 
+   PlotDefColumn = 'Q2'
+   PlotVarColumn = 'x'
+   PlotDefValue = 290., 310., 510., 1100., 1600., 2100., 3100., 5100., 8100., 16000., 31000 
+   PlotOptions(1)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 300  @Ymin:0.01@Xlog@Ylog'
+   PlotOptions(2)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 500  @Ymin:0.01@Xlog@Ylog'
+   PlotOptions(3)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 1000 @Ymin:0.001@Xlog@Ylog'
+   PlotOptions(4)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 1500 @Ymin:0.001@Xlog@Ylog'
+   PlotOptions(5)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 2000 @Ymin:0.001@Xlog@Ylog'
+   PlotOptions(6)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 3000 @Ymin:0.0005@Xlog@Ylog'
+   PlotOptions(7)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 5000 @Ymin:0.0001@Xlog@Ylog'
+   PlotOptions(8)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 8000 @Ymin:0.0001@Xlog@Ylog'
+   PlotOptions(9)  = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 15000@Ymin:0.00001@Xlog@Ylog'
+   PlotOptions(10) = 'Experiment:HERA1+2@ExtraLabel:e^{-}p #rightarrow #nuX (CC) @XTitle: x @YTitle: d^{2}#sigma/dxdQ^{2} @Title:Q^{2} = 30000@Ymin:0.00001@Xlog@Ylog'
+&End
+!*  Q2    xmin   xmax      F2     stat     sys  
+23.0	0.02	0.2		0.366	0.089	0.089		
+23.0	0.2		0.4		0.67	0.086	0.086	
+23.0	0.4		0.6		0.722	0.104	0.104	
+23.0	0.6		0.8		0.693	0.116	0.116	
+23.0	0.8		1.0		0.407	0.222	0.222	
+
+
+
