@@ -1,0 +1,34 @@
+ !*  File produced by S.Schulte
+ !*  Created on 26/07/2017
+
+&Data 
+  Name = "LEP_OPAL_Akers_f2had_1994" 
+  Reaction = "NC e+-p"
+  NData =   7
+  NColumn =   4
+  ColumnType = 2*"Bin","Sigma", 1*"Error"
+  ColumnName = "Q2","x","Sigma", "stat"
+  NInfo =  4
+  CInfo = "sqrt(S)", "e charge", "reduced", "e polarity"
+  DataInfo =     0.0,    0.1000E+01,    0.1000E+01,    0.0000E+00,
+  IndexDataset =   402
+  Percent = 1*true
+&End 
+
+&PlotDesc
+   PlotN = 2
+   PlotDefColumn = 'Q2'
+   PlotDefValue = 4.0, 5.9, 8.0, 30.0 
+   PlotVarColumn = 'x'
+   PlotOptions(1)  = 'Experiment:OPAL1994 @ExtraLabel:#gamma#gamma #rightarrow X @XTitle: x @YTitle: F_{2}^{#gamma}  @Title:Q^{2} = 5.9 @Xlog'
+   PlotOptions(2)  = 'Experiment:OPAL1994 @ExtraLabel:#gamma#gamma #rightarrow X @XTitle: x @YTitle: F_{2}^{#gamma}  @Title:Q^{2} = 14.7 @Xlog'
+&End
+*        Q2           x     F2    stat 
+5.9 	0.046	0.224	0.018
+5.9		0.187	0.352	0.03
+5.9		0.46599999999999997	0.348	0.09
+14.7	0.07150000000000001	0.325	0.029
+14.7	0.2305	0.465	0.038
+14.7	0.42300000000000004	0.446	0.051
+14.7	0.679	0.409	0.102
+
